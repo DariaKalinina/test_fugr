@@ -74,6 +74,7 @@ function watch() {
   gulp.watch(paths.src + 'scss/**/*.scss', styles);
   gulp.watch(paths.src + 'js/*.js', scripts);
   gulp.watch(paths.src + '**/*.pug', pugs);
+  gulp.watch(paths.src + '**/*.json', pugs);
   gulp.watch(paths.src + 'img/*.*', moveImg);
 }
 
