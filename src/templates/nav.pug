@@ -1,3 +1,7 @@
 //-шаблон для nav
-mixin nav
-  nav.nav Я nav
+mixin nav(data)
+  nav.nav 
+    ul.nav__list
+    each item in data
+      li.nav__item
+        a(class='nav__link' href='#')= item

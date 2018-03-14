@@ -1,0 +1,57 @@
+.header{
+  display: flex;
+  width: 100%;
+  height: 158px;
+  background-color: $white;
+  align-items: flex-end;
+  padding: 15px 25px 20px;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 244px;
+  height: 122px;
+  overflow: hidden;
+}
+
+.logo__img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header__valculate{
+  display: inline-block;
+  position: relative;
+  margin-left: auto;
+  padding-bottom: 17px;
+  font-size: 23px;
+  color: $orange;
+  text-decoration: none;
+    &:after{
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      background-color: $orange;
+      height: 3px;
+      position: absolute;
+    }
+}
+
+.header__contact{
+  padding-left: 70px;
+  text-align: right;
+  padding-bottom: 17px;
+}
+
+.header__time{
+  font-size: 16px;
+  color: $grey-light;
+}
+
+.header__phone{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 31px;
+  color: $grey-light;
+}

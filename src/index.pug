@@ -22,7 +22,7 @@ html(lang='ru')
       //внутренний контайнер для адаптива
       .container
         +header
-         +nav
+        +nav(['О компании', 'Цены', 'Услуги и продукты', 'Акция', 'Контакты'])
         .content   
           +title
           .content__section
@@ -34,5 +34,5 @@ html(lang='ru')
             
          
     //внешний скрипт      
-    script(src='js/script.min.js')
+    // script(src='js/script.min.js') 
         
