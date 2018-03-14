@@ -1,8 +1,15 @@
 //переменные: цвета
-
+$blue: #e1f0f8;
 
 //mixin
-@import 'block/mixin.scss';
+@import 'mixins/mixin.scss';
 
 //block
 @import 'block/adjustment.scss';
+@import 'block/header.scss';
+@import 'block/nav.scss';
+@import 'block/title.scss';
+@import 'block/recommendation.scss';
+@import 'block/main-content.scss';
+@import 'block/description.scss';
+@import 'block/review.scss';
