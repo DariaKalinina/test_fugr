@@ -1,5 +1,5 @@
 //отправка формы
-$('#form').on('submit', function (e) {
+$('#form-id').on('submit', function (e) {
   e.preventDefault();
   console.log('ok');
 });

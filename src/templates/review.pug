@@ -10,7 +10,7 @@ mixin review(review)
       .review__time=review.time
       .review__stars
         -for(var i=0; i<review.stars; i++) 
-          img.review__stars-img(src='img/star.png')  
+          img.review__stars-img(src='img/star.png' alt='star')  
       .review__text=review.text  
       a.review__link(href='#') прочитать полностью
       footer.review__footer
