@@ -19,13 +19,14 @@
   max-height: 100%;
 }
 
-.header__valculate{
+.header__calculate{
   display: inline-block;
   position: relative;
   margin-left: auto;
   padding-bottom: 17px;
   font-size: 23px;
   color: $orange;
+  line-height: 1;
   text-decoration: none;
     &:after{
       display: block;
@@ -39,9 +40,9 @@
 }
 
 .header__contact{
-  padding-left: 70px;
+  padding-left: 94px;
   text-align: right;
-  padding-bottom: 17px;
+  padding-bottom: 6px;
 }
 
 .header__time{
@@ -53,5 +54,6 @@
   display: inline-block;
   text-decoration: none;
   font-size: 31px;
+  line-height: 1.3;
   color: $grey-light;
 }

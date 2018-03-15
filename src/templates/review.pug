@@ -3,7 +3,7 @@ mixin review(review)
   section.review
     header.review__header
       h2.review__title=reviews
-      a.review__more-review посмотреть еще отзывы
+      a.review__more-review(href='#') посмотреть еще отзывы
     article.review__article 
       .review__name=review.person
       .review__order=review.order 
@@ -12,6 +12,6 @@ mixin review(review)
         -for(var i=0; i<review.stars; i++) 
           img.review__stars-img(src='img/star.png')  
       .review__text=review.text  
-      a.review__link прочитать полностью
+      a.review__link(href='#') прочитать полностью
       footer.review__footer
-        a.review__add-review оставить отзыв
+        a.review__add-review(href='#') оставить отзыв

@@ -1,15 +1,15 @@
 .main{
   border-radius: 5px;
   background-color: $white;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 30px;
+  padding: 20px 25px 30px;
+  height: 610px;
+  margin-bottom: 25px;
 }
 
 .main__title{
   font-size: 26px;
   color: $grey-dark;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
 }
 
 .main__block{
@@ -18,8 +18,7 @@
 
 .main__pig{
   width: 366px;
-  padding-left: 57px;
-  padding-right: 84px;
+  padding-right: 32px;
   text-align: center;
 }
 
@@ -38,8 +37,8 @@
 }
 
 .main__item{
-  padding-left: 16px;
-  margin-bottom: 15px;
+  padding-left: 19px;
+  margin-bottom: 8px;
   font-size: 14px;
   color: $grey-dark;
   position: relative;
@@ -64,10 +63,81 @@
 .form__title{
   font-size: 20px;
   color: $grey-dark;
+  padding-bottom: 17px;
 }
 
 .form__list{
   display: flex;
   width: 100%;
+  padding-bottom: 27px;
   justify-content: space-between;
+}
+
+.form__item{
+  margin-right: 8px;
+    &:last-child{
+      margin-right: 0;
+    }
+}
+
+.form__radio{
+  display: none;
+}
+
+.form__radio-custom {
+	position: relative;
+  border-radius: 3px;
+  background-color: $orange;
+  width: 61px;
+  height: 59px;
+}
+
+.form__radio:checked + .form__radio-custom::after {
+	content: "";
+	display: block;
+  background-color: $white;
+  position: absolute;
+  left: 13px;
+  top: 30px;
+  width: 18px;
+  height: 5px;
+  transform: rotate(45deg);
+}
+
+.form__radio:checked + .form__radio-custom::before{
+  content: "";
+	display: block;
+  position: absolute;
+  left: 22px;
+  top: 27px;
+  width: 30px;
+  height: 5px;
+  transform: rotate(-45deg);
+  background-color: $white;
+}
+
+.form__more{
+  font-size: 14px;
+  color: $grey-dark;
+  padding-bottom: 41px;
+}
+
+.form__submit{
+  display: block;
+  border-radius: 5px;
+  background-color: $orange2;
+  padding: 11px 40px;
+  border: 0;
+  font-size: 18px;
+  color: $white;
+  &:focus{
+    outline: none!important;
+  }
+}
+
+.form__order{
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+  color: $light;
 }

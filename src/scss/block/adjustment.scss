@@ -27,8 +27,7 @@ body {
 }
 
 .container{
-  max-width: rem(1145px);
-  width: 100%;
+  width: 1145px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -36,13 +35,14 @@ body {
 
 .content{
   padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .content__section{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .content__block{
