@@ -1,3 +1,8 @@
 //-шаблон для recommendation
-mixin recommendation
-  aside.recommendation Я recommendation
+mixin recommendation(items)
+  aside.recommendation  
+    .recommendation__title Рекомендуем также
+    ul.recommendation__list
+      each item in items
+        li.recommendation__item
+          a(class='recommendation__link' href=`${item.href}`)= item.text

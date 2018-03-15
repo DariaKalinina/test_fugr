@@ -1,3 +1,51 @@
 //-шаблон для main-content
 mixin main-content
-  main.main-content Я main-content
+  section.main
+    h2.main__title Создайте выразительный интерьер с цветными окнами REHAU
+    .main__block
+      .main__pig
+        img.main__img(src='img/window.png')
+        .main__img-caption Ирладский дуб
+      .main__description
+        ul.main__list
+          li.main__item Точная визуализация натурального дерева  
+          li.main__item Яркие нестандартные цвета в тон или дополнение интерьера
+          li.main__item Разные фактуры
+        form.form(metod='post')
+          .form__title Подберите цвет для своих окон
+          ul.form__list
+            li.form__item
+              label.form__label
+                  input(type="radio" name="radio-pay" class="form__radio" value="1") 
+                  .form__radio-custom.form__radio-custom--1
+            li.form__item        
+              label.form__label
+                  input(type="radio" name="radio-pay" class="form__radio" value="2") 
+                  .form__radio-custom.form__radio-custom--2 
+            li.form__item
+              label.form__label
+                  input(type="radio" name="radio-pay" class="form__radio" value="3") 
+                  .form__radio-custom.form__radio-custom--3
+            li.form__item        
+              label.form__label
+                  input(type="radio" name="radio-pay" class="form__radio" value="4") 
+                  .form__radio-custom.form__radio-custom--4  
+            li.form__item        
+              label.form__label
+                  input(type="radio" name="radio-pay" class="form__radio" value="5") 
+                  .form__radio-custom.form__radio-custom--5 
+            li.form__item
+              label.form__label
+                  input(type="radio" name="radio-pay" class="form__radio" value="6") 
+                  .form__radio-custom.form__radio-custom--6
+            li.form__item        
+              label.form__label
+                  input(type="radio" name="radio-pay" class="form__radio" value="7") 
+                  .form__radio-custom.form__radio-custom--7 
+          .form__more Больше 50 вариантов цветов и фактур спрашивайте у наших замерщиков 
+          input(type='submit' value='Рассчитать со скидкой 70%' class='form__submit') 
+          a.form__order(href='#') или отправить заявку и получить консультацию
+                  
+                                
+                                
+             

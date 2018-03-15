@@ -1,4 +1,4 @@
-//подключение шаблонов
+extends templates/template.pug
 include templates/header.pug
 include templates/nav.pug
 include templates/title.pug
@@ -7,32 +7,21 @@ include templates/main-content.pug
 include templates/description.pug
 include templates/review.pug
 
-
-doctype html
-html(lang='ru')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width  initial-scale=1')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    title Цветные пластиковые окна
-    link(rel='stylesheet', href='css/main.min.css')
-  body
-    //внешний контайнер
-    .wrapper
-      //внутренний контайнер для адаптива
-      .container
-        +header
-        +nav(['О компании', 'Цены', 'Услуги и продукты', 'Акция', 'Контакты'])
-        .content   
-          +title
-          .content__section
-            +recommendation
-            section.content__block
-              +main-content
-              +description
-              +review
+block content
+  //внешний контайнер
+  .wrapper
+    //внутренний контайнер для адаптива
+    .container
+      +header
+      +nav(nav)
+      .content   
+        +title
+        .content__section
+          +recommendation(aside)
+          main.content__block
+            +main-content
+            +description
+            +review(review)
             
-         
-    //внешний скрипт      
-    // script(src='js/script.min.js') 
+//- block scripts
         

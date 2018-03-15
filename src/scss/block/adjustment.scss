@@ -1,4 +1,4 @@
-//начало стилей для html, body
+//стили для html, body
 html, body{
   height: 100%;
   padding: 0;
@@ -17,9 +17,8 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.42;
 }
-//конец стилей для html, body
 
-//начало стилей для внешнего и внутреннего контейнера
+//стили для внешнего и внутреннего контейнера
 .wrapper{
   min-height: 100%;
   height: auto;
@@ -34,7 +33,16 @@ body {
   margin: 0 auto;
   position: relative;
 }
-//конец стилей для внешнего и внутреннего контейнера
+
+.content{
+  padding-top: 35px;
+}
+
+.content__section{
+  padding-top: 25px;
+}
+
+
 
 //------------стили для тегов------------
 ul{

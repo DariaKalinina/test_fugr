@@ -52,7 +52,7 @@ function scripts() {
 }
 
 function pugs() {
-  let locals = require('./src/sourse/info.json');
+  let locals = require('./src/data/info.json');
   return gulp.src(paths.src + '*.pug')
     .pipe(pug({
       locals : locals,

@@ -1,3 +1,17 @@
 //-шаблон для review
-mixin review
-  article.review Я review
+mixin review(review)
+  section.review
+    header.review__header
+      h2.review__title=reviews
+      a.review__more-review посмотреть еще отзывы
+    article.review__article 
+      .review__name=review.person
+      .review__order=review.order 
+      .review__time=review.time
+      .review__stars
+        -for(var i=0; i<review.stars; i++) 
+          img.review__stars-img(src='img/star.png')  
+      .review__text=review.text  
+      a.review__link прочитать полностью
+    footer.review__footer
+      a.review__add-review оставить отзыв

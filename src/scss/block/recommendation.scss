@@ -1,0 +1,26 @@
+.recommendation{
+  display: inline-block;
+  width: 240px;
+  padding: 30px 15px 38px 25px;
+  border-radius: 5px;
+  background-color: $white;
+}
+
+.recommendation__title{
+  display: block;
+  font-size: 20px;
+  color: $grey-title;
+  padding-bottom: 25px;
+}
+
+.recommendation__item{
+  padding-bottom: 15px;
+}
+
+.recommendation__link{
+  font-size: 16px;
+  color: $light;
+    &:hover{
+      color: $orange;
+    }
+}
